@@ -1,14 +1,6 @@
 package Geometria2D;
 
-public class Trapecio {
-    double baseMenor, baseMAyor, altura,longLateral;
-
-    public Trapecio() {
-        this.baseMenor = baseMenor;
-        this.baseMAyor = baseMAyor;
-        this.altura = altura;
-        this.longLateral = longLateral;
-    }
+public class Trapecio extends Figuras2D{
 
     public double areaTrapecioIsoceles(){
         return (((baseMAyor+baseMenor)*altura)/2);
@@ -28,21 +20,5 @@ public class Trapecio {
         vr= r / 2;
         altura = Math.sqrt(Math.pow(longLateral,2)-Math.pow(vr,2));
         return  altura;
-    }
-
-    public void setBaseMenor(double baseMenor) {
-        this.baseMenor = baseMenor;
-    }
-
-    public void setBaseMAyor(double baseMAyor) {
-        this.baseMAyor = baseMAyor;
-    }
-
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
-
-    public void setLongLateral(double longLateral) {
-        this.longLateral = longLateral;
     }
 }

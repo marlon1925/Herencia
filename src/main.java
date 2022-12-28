@@ -55,7 +55,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el radio del círculo: ");
-                                    circu.setRadioCirculo(auxRDD = sc.nextDouble());
+                                    circu.setRadio(auxRDD = sc.nextDouble());
                                 }while (auxRDD < 0);
                                 System.out.println("\nArea Circulo: " + dcm.format(circu.areaCirculo())+"\n");
                                 System.out.println("==========================================================");
@@ -64,7 +64,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el radio del círculo: ");
-                                    circu.setDiaCirculo(auxRDD = sc.nextDouble());
+                                    circu.setDiametro(auxRDD = sc.nextDouble());
                                 }while (auxRDD < 0);
                                 System.out.println("\nEl diámetro del círculo es : "+dcm.format(circu.diametroCircuo())+"\n");
                                 System.out.println("==========================================================");
@@ -73,7 +73,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el diámetro del círculo : ");
-                                    circu.setPeCirculo(auxRDD = sc.nextDouble());
+                                    circu.setPerimetro(auxRDD = sc.nextDouble());
                                 }while ( auxRDD < 0);
                                 System.out.println("\nEl Perímetro del círculo es : "+dcm.format(circu.perimetroCirculo())+"\n");
                                 System.out.println("==========================================================");
@@ -83,7 +83,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese la longitud de un lado: ");
-                                    cua.setaCuadrado(auxRDD = sc.nextDouble());
+                                    cua.setArea(auxRDD = sc.nextDouble());
                                 }while (auxRDD < 0);
                                 System.out.println("\nEl área del cuadrado es : "+dcm.format(cua.areaCuadrado())+"\n");
                                 System.out.println("==========================================================");
@@ -92,7 +92,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el lado del cuadrado : ");
-                                    cua.setPeCuadrado( auxRDD = sc.nextDouble());
+                                    cua.setPerimetro(auxRDD = sc.nextDouble());
                                 }while (auxRDD < 0);
                                 System.out.println("EL Perímetro del cuadrado es : "+dcm.format(cua.perimetroCuadrado())+"\n");
                                 System.out.println("==========================================================");
@@ -101,7 +101,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el lado del cuadrado : ");
-                                    cua.setDiaCuadrado(auxRDD = sc.nextDouble());
+                                    cua.setDiametro(auxRDD = sc.nextDouble());
                                 }while (auxRDD < 0);
                                 System.out.println("La diagonal del cuadrado es : "+dcm.format(cua.diagonalCuadrado())+"\n");
                                 break;
@@ -125,7 +125,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el valor del lado : ");
-                                    hexa.setLado(auxRDD = sc.nextDouble());
+                                    hexa.setLado1(auxRDD = sc.nextDouble());
                                 }while (auxRDD < 0);
                                 System.out.println("El perímetro del hexagono es : "+dcm.format(hexa.perimetroHexagono())+"\n");
                                 System.out.println("==========================================================");
@@ -179,7 +179,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el valor de un lado : ");
-                                    pentaa.setLadoPenta(auxRDD = sc.nextDouble());
+                                    pentaa.setLado1(auxRDD = sc.nextDouble());
                                 }while (auxRDD < 0);
                                 System.out.println("El perímetro del Pentágono es : "+dcm.format(pentaa.perimetroPentagono())+"\n");
                                 System.out.println("==========================================================");
@@ -188,9 +188,9 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese le valor de un lado : ");
-                                    pentaa.setPerimetroPenta( auxRDD  =sc.nextDouble());
+                                    pentaa.setPerimetro( auxRDD  =sc.nextDouble());
                                     System.out.print("Ingrese el apotema : ");
-                                    pentaa.setApoPenta( auxRDD2 = sc.nextDouble());
+                                    pentaa.setApotema( auxRDD2 = sc.nextDouble());
                                 }while (auxRDD < 0 || auxRDD2 <0);
                                 System.out.println("El área del Pentágono es : "+dcm.format(pentaa.areaPentagono())+"\n");
                                 System.out.println("==========================================================");
@@ -210,9 +210,9 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el valor de la base : ");
-                                    rectan.setBaseRec( auxRDD = sc.nextDouble());
+                                    rectan.setBase( auxRDD = sc.nextDouble());
                                     System.out.print("Ingrese el valor de la altura : ");
-                                    rectan.setAlturaRec(auxRDD2 = sc.nextDouble());
+                                    rectan.setAltura(auxRDD2 = sc.nextDouble());
                                 }while (auxRDD < 0 || auxRDD2 < 0);
                                 System.out.println("El áre del Rectángulo es : "+dcm.format(rectan.areaRectangulo())+"\n");
                                 System.out.println("==========================================================");
@@ -221,9 +221,9 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el valor del área : ");
-                                    rectan.setAreaRec(auxRDD = sc.nextDouble());
+                                    rectan.setArea(auxRDD = sc.nextDouble());
                                     System.out.print("Ingrese el valor de la base : ");
-                                    rectan.setBaseRec(auxRDD2  =sc.nextDouble());
+                                    rectan.setBase(auxRDD2  =sc.nextDouble());
                                 }while (auxRDD <0 || auxRDD2 <0);
                                 System.out.println("La altura del Rectángulo es : "+dcm.format(rectan.alturaRectangulo())+"\n");
                                 System.out.println("==========================================================");
@@ -244,7 +244,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el valor de un lado : ");
-                                    rom.setLadoRom(auxRDD = sc.nextDouble());
+                                    rom.setLado1(auxRDD = sc.nextDouble());
                                 }while (auxRDD < 0);
                                 System.out.println("El Perímetro del Rombo es : "+dcm.format(rom.perimetroRombo())+"\n");
                                 System.out.println("==========================================================");
@@ -359,7 +359,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el valor del lado : ");
-                                    octo.setLadoOcto(auxRDD = sc.nextDouble());
+                                    octo.setLado1(auxRDD = sc.nextDouble());
                                 }while (auxRDD <0);
                                 System.out.println("El Perímetro del Octógono es : "+dcm.format(octo.perimetroOctogono())+"\n");
                                 System.out.println("==========================================================");
@@ -368,9 +368,9 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el valor del lado : ");
-                                    octo.setLadoOcto(auxRDD = sc.nextDouble());
+                                    octo.setLado1(auxRDD = sc.nextDouble());
                                     System.out.print("Ingrese el apotema : ");
-                                    octo.setApoOcto(auxRDD2 = sc.nextDouble());
+                                    octo.setApotema(auxRDD2 = sc.nextDouble());
                                 }while (auxRDD<0 || auxRDD2<0);
                                 System.out.printf("El área del Octógono es : "+dcm.format(octo.areaOctogono())+"\n");
 
@@ -380,7 +380,7 @@ public class main {
                                 do{
                                     System.out.println("\n¡Ingrese valores positivos!\n");
                                     System.out.print("Ingrese el valor del lado : ");
-                                    octo.setLadoOcto(auxRDD = sc.nextDouble());
+                                    octo.setLado2(auxRDD = sc.nextDouble());
                                 }while (auxRDD<0);
                                 System.out.println("El apotema del Octógono Regular es : "+dcm.format(octo.apotemaOctogono())+"\n");
                                 break;
