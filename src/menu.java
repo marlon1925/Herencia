@@ -23,7 +23,7 @@ public class menu {
             System.out.println("=====GEOMETRIA 2D=====");
             System.out.println("| 1. Círculo         |");
             System.out.println("| 2. Cuadrado        |");
-            System.out.println("| 3. Elipse          |");
+            System.out.println("| 3. Hexagono        |");
             System.out.println("| 4. Paralelogramo   |");
             System.out.println("| 5. Pentágono       |");
             System.out.println("| 6. Rectángulo      |");

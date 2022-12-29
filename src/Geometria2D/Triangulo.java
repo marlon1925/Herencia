@@ -11,8 +11,8 @@ public class Triangulo extends Figuras2D{
     }
 
     public double alturaTrianguloEquilatero(){
-        double lado;
-        lado = lado1/2;
-        return Math.sqrt(Math.pow(lado1,2)-Math.pow(lado,2));
+        double ladoT;
+        ladoT = lado1/2;
+        return Math.sqrt(Math.pow(lado1,2)-Math.pow(ladoT,2));
     }
 }

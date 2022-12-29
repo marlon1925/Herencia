@@ -15,4 +15,7 @@ public class Circulo extends Figuras2D{
         perimetro = VPi * diametro;
         return perimetro;
     }
+
+
+
 }

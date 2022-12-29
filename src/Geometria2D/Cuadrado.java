@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Cuadrado extends Figuras2D{
 
     public double areaCuadrado(){
-        return Math.pow(area,2);
+        return Math.pow(lado1,2);
     }
 
     public double perimetroCuadrado(){
-        return cuadrado * perimetro;
+        return cuadrado * lado2;
     }
 
     public double diagonalCuadrado(){
-        return diametro * Math.sqrt(2);
+        return lado3 * Math.sqrt(2);
     }
 
 }

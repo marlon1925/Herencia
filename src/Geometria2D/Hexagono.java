@@ -11,7 +11,7 @@ public class Hexagono extends Figuras2D {
     }
 
     public double apotemaHexagono(){
-        return (lado2/1.15);
+        return (lado2/1.15); // el valor de 1.5 sale de 2*tan(180/6))
     }
 
 }

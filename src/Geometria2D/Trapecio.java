@@ -7,18 +7,18 @@ public class Trapecio extends Figuras2D{
     }
 
     public double perimetroTrapecio(){
-        double  resul=0,base=0,re=0;
+        double  resul=0,baseT=0,re=0;
         resul = baseMAyor-baseMenor;
-        base = resul/2;
-        re = Math.sqrt(Math.pow(base,2)+Math.pow(altura,2));
+        baseT = resul/2;
+        re = Math.sqrt(Math.pow(baseT,2)+Math.pow(altura,2));
         return baseMenor+baseMAyor+(2*re);
     }
 
     public double alturaTrapecioIsoceles(){
-        double r=0,vr=0,altura=0;
+        double r=0,vr=0,alturaT=0;
         r = baseMAyor - baseMenor;
         vr= r / 2;
-        altura = Math.sqrt(Math.pow(longLateral,2)-Math.pow(vr,2));
+        alturaT = Math.sqrt(Math.pow(longLateral,2)-Math.pow(vr,2));
         return  altura;
     }
 }

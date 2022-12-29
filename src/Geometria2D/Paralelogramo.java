@@ -4,11 +4,11 @@ public class Paralelogramo extends Figuras2D{
 
     public double alturaParalelogramo(){
         double a = Math.toRadians(angulo);
-        return (altura2)*Math.sin(a);
+        return (lado1)*Math.sin(a);
     }
 
     public double periParalelogramo(){
-        return (lado1+lado2)*2;
+        return (lado2+lado3)*2;
     }
 
     public double areaParalelogramo(){

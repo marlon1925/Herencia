@@ -6,8 +6,11 @@ public class Rectangulo extends Figuras2D {
         return base*altura;
     }
 
-    public double alturaRectangulo(){
-        return (area)/(base);
+    public double diagonalRectangulo(){
+        double b,a;
+        b = Math.pow(base,2);
+        a = Math.pow(altura,2);
+        return Math.sqrt(a+b);
     }
 
     public double perimetroRectangulo(){
